@@ -1,0 +1,226 @@
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    
+}
+
+h1,h2 {
+    text-align: center;
+}
+
+p {
+    color: #808080;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 140%;
+/* or 22px */
+    text-align: center; 
+
+}
+
+.main_page {
+    max-width: 1440px;
+    margin: auto;
+}
+
+header {
+    height: 60px;
+    background-color: #FFD25A;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 100%;
+    width: 100px;
+}
+
+.bubble {
+    border:1px black solid;
+    border-radius: 50%;
+    height: 14px;
+    width: 14px;
+    background-color: black;
+    top:22px;
+    left: 46px;
+    position: relative;
+
+}
+
+.bubble:after {
+    content: "";
+    border:1px #FD6141 solid;
+    border-radius: 50%;
+    height: 14px;
+    width: 14px;
+    background-color: #FD6141;
+    top: -1px;
+    left: 25px;
+    position: absolute;
+}
+
+.bubble:before {
+    content: "";
+    border:1px #FD6141 solid;
+    border-radius: 50%;
+    height: 14px;
+    width: 14px;
+    background-color: #FD6141;
+    top: -1px;
+    left: -27px;
+    position: absolute;
+}
+
+.menu_wrapper {
+    width: 50px;
+    height: 100%;
+    
+}
+
+menu {
+    width: 18px;
+    vertical-align: center;
+    margin: 0;
+    padding:0;
+    border: 1px black solid;
+    position: relative;
+    top: 50%;
+    
+}
+
+menu:before {
+    content: "";
+    width: 18px;
+    vertical-align: center;
+    margin: 0;
+    padding:0;
+    border: 1px black solid;
+    position: absolute;
+    top: -8px;
+    left:-1px;
+}
+
+menu:after {
+    content: "";
+    width: 18px;
+    vertical-align: center;
+    margin: 0;
+    padding:0;
+    border: 1px black solid;
+    position: absolute;
+    top: 7px;
+    left:-1px;
+}
+
+
+.our_friend {
+    height: 380px;
+}
+
+.slider_bar {
+    position: relative;
+    min-width: 1040px;
+    height: 220px;
+  
+  }
+  
+  .slider_bar input {
+    display: none;
+  }
+
+  .slider_bar .points {
+    position: absolute;
+    margin-left: -50px;
+    left: 50%;
+   }
+   
+   .slider_bar label {
+    cursor: pointer;
+    display: inline-block;
+    height: 13px;
+    margin: 10px;
+    position: relative;
+    width: 14px;
+    border-radius: 50%;
+    top: -45px;
+    z-index: 2;
+   }
+   
+   .slider_bar label:after {
+    border: 2px solid white;
+    content: " ";
+    display: block;
+    height: 13px;
+    left: -2px;
+    position: absolute;
+    top: -2px;
+    width: 14px;
+    border-radius: 50%;
+   }
+   
+   .slider {
+    background-color: #333;
+    height: inherit;
+    overflow: hidden;
+    position: relative;
+    width: inherit;
+  }
+
+  
+   #first:checked ~ .points label:nth-of-type(1),
+    #second:checked ~ .points label:nth-of-type(2),
+    #third:checked ~ .points label:nth-of-type(3),
+    #fourth:checked ~ .points label:nth-of-type(4) {
+        background: white;
+}
+
+
+.slider_block {
+    background-color: #F4F2ED;
+    min-width: 260px;
+    max-width:488px;
+    height: 200px;
+    display: inline-block;
+    overflow: hidden;
+    z-index: 1;
+    transition: 1s
+}
+
+button {
+    border: 1px solid #CCCCCC;
+    background:#FFFFFF;
+}
+
+
+
+form {
+    text-align: center;
+}
+
+
+.text_form {
+    display: inline-block;
+    max-width: 400px;;
+}
+
+.sub {
+    width: 388px;
+    display: inline-block;
+}
+
+.sex_buttons {
+    width: 140px;
+    height: 50px;
+}
+
+.form_elements {
+    width: 280px;
+    height: 50px;
+    margin-bottom: 20px;
+} 
+
+.footer_img {
+    height: 70px;
+}
